@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2453F9D231675BB0015F757 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453F9C231675BB0015F757 /* AppDelegate.m */; };
+		E2453FA0231675BB0015F757 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453F9F231675BB0015F757 /* ViewController.m */; };
+		E2453FA3231675BB0015F757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2453FA1231675BB0015F757 /* Main.storyboard */; };
+		E2453FA5231675BD0015F757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2453FA4231675BD0015F757 /* Assets.xcassets */; };
+		E2453FA8231675BD0015F757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2453FA6231675BD0015F757 /* LaunchScreen.storyboard */; };
+		E2453FAB231675BD0015F757 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FAA231675BD0015F757 /* main.m */; };
+		E2453FB5231675BE0015F757 /* CameraUIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FB4231675BE0015F757 /* CameraUIDemoTests.m */; };
+		E2453FC0231675BE0015F757 /* CameraUIDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FBF231675BE0015F757 /* CameraUIDemoUITests.m */; };
+		E2453FCF231676E00015F757 /* INMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FCE231676E00015F757 /* INMainViewController.m */; };
+		E245401A231677010015F757 /* INVideoPlayerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FD2231677000015F757 /* INVideoPlayerConfig.m */; };
+		E245401B231677010015F757 /* INVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FD5231677000015F757 /* INVideoModel.m */; };
+		E245401C231677010015F757 /* INTakeVideoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FD9231677000015F757 /* INTakeVideoPresenter.m */; };
+		E245401D231677010015F757 /* INTakeVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FDE231677000015F757 /* INTakeVideoModel.m */; };
+		E245401E231677010015F757 /* INTakeVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FDF231677000015F757 /* INTakeVideoConfig.m */; };
+		E245401F231677010015F757 /* INTakeVideoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FE1231677000015F757 /* INTakeVideoProgressView.m */; };
+		E2454020231677010015F757 /* INTakeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FE2231677000015F757 /* INTakeVideoView.m */; };
+		E2454021231677010015F757 /* INTakeVideoShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FE3231677000015F757 /* INTakeVideoShowView.m */; };
+		E2454022231677010015F757 /* INTakeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FE7231677000015F757 /* INTakeVideoViewController.m */; };
+		E2454023231677010015F757 /* INTakeVideoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FEA231677010015F757 /* INTakeVideoInteractor.m */; };
+		E2454024231677010015F757 /* INVideoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FEC231677010015F757 /* INVideoUtils.m */; };
+		E2454025231677010015F757 /* INDocPathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FEE231677010015F757 /* INDocPathUtils.m */; };
+		E2454026231677010015F757 /* INRecordVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FF0231677010015F757 /* INRecordVideoConfig.m */; };
+		E2454027231677010015F757 /* INCameraConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FF1231677010015F757 /* INCameraConfig.m */; };
+		E2454028231677010015F757 /* INTakePhotoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FF5231677010015F757 /* INTakePhotoPresenter.m */; };
+		E2454029231677010015F757 /* INTakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FF7231677010015F757 /* INTakePhotoViewController.m */; };
+		E245402A231677010015F757 /* INTakePhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FFB231677010015F757 /* INTakePhotoModel.m */; };
+		E245402B231677010015F757 /* INTakePhotoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FFC231677010015F757 /* INTakePhotoConfig.m */; };
+		E245402C231677010015F757 /* INTakePhotoShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2453FFE231677010015F757 /* INTakePhotoShowView.m */; };
+		E245402D231677010015F757 /* INTakePhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2454001231677010015F757 /* INTakePhotoView.m */; };
+		E245402E231677010015F757 /* INTakePhotoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2454004231677010015F757 /* INTakePhotoInteractor.m */; };
+		E245402F231677010015F757 /* INRecordVideoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2454009231677010015F757 /* INRecordVideoPresenter.m */; };
+		E2454030231677010015F757 /* INRecordVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E245400B231677010015F757 /* INRecordVideoModel.m */; };
+		E2454031231677010015F757 /* INRecordVideoNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E245400E231677010015F757 /* INRecordVideoNavigationView.m */; };
+		E2454032231677010015F757 /* INRecordVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E245400F231677010015F757 /* INRecordVideoView.m */; };
+		E2454033231677010015F757 /* INRecordVideoToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2454010231677010015F757 /* INRecordVideoToolView.m */; };
+		E2454034231677010015F757 /* INRecordVideoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2454011231677010015F757 /* INRecordVideoProgressView.m */; };
+		E2454035231677010015F757 /* INRecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2454016231677010015F757 /* INRecordVideoViewController.m */; };
+		E2454036231677010015F757 /* INRecordVideoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2454018231677010015F757 /* INRecordVideoInteractor.m */; };
+		E2454039231677A70015F757 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = E2454037231677A70015F757 /* UIColor+Addition.m */; };
+		E2454043231678060015F757 /* SAVideoRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E245403B231678050015F757 /* SAVideoRangeSlider.m */; };
+		E2454044231678060015F757 /* SASliderLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = E245403D231678050015F757 /* SASliderLeft.m */; };
+		E2454045231678060015F757 /* SAResizibleBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = E245403E231678050015F757 /* SAResizibleBubble.m */; };
+		E2454046231678060015F757 /* SASliderRight.m in Sources */ = {isa = PBXBuildFile; fileRef = E2454040231678050015F757 /* SASliderRight.m */; };
+		E245404B23167A8A0015F757 /* ic_flash_03_36x36_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245404723167A890015F757 /* ic_flash_03_36x36_@2x.png */; };
+		E245404C23167A8A0015F757 /* ic_flash_04_36x36_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245404823167A890015F757 /* ic_flash_04_36x36_@2x.png */; };
+		E245404D23167A8A0015F757 /* ic_flash_01_36x36_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245404923167A890015F757 /* ic_flash_01_36x36_@2x.png */; };
+		E245404E23167A8A0015F757 /* ic_flash_02_36x36_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245404A23167A8A0015F757 /* ic_flash_02_36x36_@2x.png */; };
+		E245405123167A930015F757 /* video_cancel_40x40_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245404F23167A920015F757 /* video_cancel_40x40_@2x.png */; };
+		E245405223167A930015F757 /* video_cancel_41x40_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245405023167A930015F757 /* video_cancel_41x40_@1x.png */; };
+		E245405723167ACA0015F757 /* lz_videoedit_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245405323167AC90015F757 /* lz_videoedit_slider@2x.png */; };
+		E245405823167ACA0015F757 /* lz_videoedit_dragimage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245405423167ACA0015F757 /* lz_videoedit_dragimage@3x.png */; };
+		E245405923167ACA0015F757 /* lz_videoedit_dragimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245405523167ACA0015F757 /* lz_videoedit_dragimage@2x.png */; };
+		E245405A23167ACA0015F757 /* lz_videoedit_slider@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245405623167ACA0015F757 /* lz_videoedit_slider@3x.png */; };
+		E245405C23167AD40015F757 /* ic_nav_white_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245405B23167AD40015F757 /* ic_nav_white_close@2x.png */; };
+		E245405E23167B070015F757 /* photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E245405D23167B070015F757 /* photograph@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2453FB1231675BE0015F757 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2453F90231675BB0015F757 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2453F97231675BB0015F757;
+			remoteInfo = CameraUIDemo;
+		};
+		E2453FBC231675BE0015F757 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2453F90231675BB0015F757 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2453F97231675BB0015F757;
+			remoteInfo = CameraUIDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2453F98231675BB0015F757 /* CameraUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2453F9B231675BB0015F757 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2453F9C231675BB0015F757 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2453F9E231675BB0015F757 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2453F9F231675BB0015F757 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2453FA2231675BB0015F757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2453FA4231675BD0015F757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2453FA7231675BD0015F757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2453FA9231675BD0015F757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2453FAA231675BD0015F757 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2453FB0231675BE0015F757 /* CameraUIDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraUIDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2453FB4231675BE0015F757 /* CameraUIDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraUIDemoTests.m; sourceTree = "<group>"; };
+		E2453FB6231675BE0015F757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2453FBB231675BE0015F757 /* CameraUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2453FBF231675BE0015F757 /* CameraUIDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraUIDemoUITests.m; sourceTree = "<group>"; };
+		E2453FC1231675BE0015F757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2453FCD231676E00015F757 /* INMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INMainViewController.h; sourceTree = "<group>"; };
+		E2453FCE231676E00015F757 /* INMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INMainViewController.m; sourceTree = "<group>"; };
+		E2453FD1231677000015F757 /* INDocPathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDocPathUtils.h; sourceTree = "<group>"; };
+		E2453FD2231677000015F757 /* INVideoPlayerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INVideoPlayerConfig.m; sourceTree = "<group>"; };
+		E2453FD3231677000015F757 /* INVideoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INVideoUtils.h; sourceTree = "<group>"; };
+		E2453FD4231677000015F757 /* INRecordVideoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INRecordVideoConfig.h; sourceTree = "<group>"; };
+		E2453FD5231677000015F757 /* INVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INVideoModel.m; sourceTree = "<group>"; };
+		E2453FD7231677000015F757 /* INTakeVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakeVideoViewController.h; sourceTree = "<group>"; };
+		E2453FD9231677000015F757 /* INTakeVideoPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakeVideoPresenter.m; sourceTree = "<group>"; };
+		E2453FDA231677000015F757 /* INTakeVideoPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakeVideoPresenter.h; sourceTree = "<group>"; };
+		E2453FDC231677000015F757 /* INTakeVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakeVideoModel.h; sourceTree = "<group>"; };
+		E2453FDD231677000015F757 /* INTakeVideoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakeVideoConfig.h; sourceTree = "<group>"; };
+		E2453FDE231677000015F757 /* INTakeVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakeVideoModel.m; sourceTree = "<group>"; };
+		E2453FDF231677000015F757 /* INTakeVideoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakeVideoConfig.m; sourceTree = "<group>"; };
+		E2453FE1231677000015F757 /* INTakeVideoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakeVideoProgressView.m; sourceTree = "<group>"; };
+		E2453FE2231677000015F757 /* INTakeVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakeVideoView.m; sourceTree = "<group>"; };
+		E2453FE3231677000015F757 /* INTakeVideoShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakeVideoShowView.m; sourceTree = "<group>"; };
+		E2453FE4231677000015F757 /* INTakeVideoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakeVideoProgressView.h; sourceTree = "<group>"; };
+		E2453FE5231677000015F757 /* INTakeVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakeVideoView.h; sourceTree = "<group>"; };
+		E2453FE6231677000015F757 /* INTakeVideoShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakeVideoShowView.h; sourceTree = "<group>"; };
+		E2453FE7231677000015F757 /* INTakeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakeVideoViewController.m; sourceTree = "<group>"; };
+		E2453FE9231677010015F757 /* INTakeVideoInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakeVideoInteractor.h; sourceTree = "<group>"; };
+		E2453FEA231677010015F757 /* INTakeVideoInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakeVideoInteractor.m; sourceTree = "<group>"; };
+		E2453FEB231677010015F757 /* INCameraConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INCameraConfig.h; sourceTree = "<group>"; };
+		E2453FEC231677010015F757 /* INVideoUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INVideoUtils.m; sourceTree = "<group>"; };
+		E2453FED231677010015F757 /* INVideoPlayerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INVideoPlayerConfig.h; sourceTree = "<group>"; };
+		E2453FEE231677010015F757 /* INDocPathUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDocPathUtils.m; sourceTree = "<group>"; };
+		E2453FEF231677010015F757 /* INVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INVideoModel.h; sourceTree = "<group>"; };
+		E2453FF0231677010015F757 /* INRecordVideoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INRecordVideoConfig.m; sourceTree = "<group>"; };
+		E2453FF1231677010015F757 /* INCameraConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INCameraConfig.m; sourceTree = "<group>"; };
+		E2453FF3231677010015F757 /* INTakePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakePhotoViewController.h; sourceTree = "<group>"; };
+		E2453FF5231677010015F757 /* INTakePhotoPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakePhotoPresenter.m; sourceTree = "<group>"; };
+		E2453FF6231677010015F757 /* INTakePhotoPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakePhotoPresenter.h; sourceTree = "<group>"; };
+		E2453FF7231677010015F757 /* INTakePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakePhotoViewController.m; sourceTree = "<group>"; };
+		E2453FF9231677010015F757 /* INTakePhotoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakePhotoConfig.h; sourceTree = "<group>"; };
+		E2453FFA231677010015F757 /* INTakePhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakePhotoModel.h; sourceTree = "<group>"; };
+		E2453FFB231677010015F757 /* INTakePhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakePhotoModel.m; sourceTree = "<group>"; };
+		E2453FFC231677010015F757 /* INTakePhotoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakePhotoConfig.m; sourceTree = "<group>"; };
+		E2453FFE231677010015F757 /* INTakePhotoShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakePhotoShowView.m; sourceTree = "<group>"; };
+		E2453FFF231677010015F757 /* INTakePhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakePhotoView.h; sourceTree = "<group>"; };
+		E2454000231677010015F757 /* INTakePhotoShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakePhotoShowView.h; sourceTree = "<group>"; };
+		E2454001231677010015F757 /* INTakePhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakePhotoView.m; sourceTree = "<group>"; };
+		E2454003231677010015F757 /* INTakePhotoInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTakePhotoInteractor.h; sourceTree = "<group>"; };
+		E2454004231677010015F757 /* INTakePhotoInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTakePhotoInteractor.m; sourceTree = "<group>"; };
+		E2454006231677010015F757 /* INRecordVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INRecordVideoViewController.h; sourceTree = "<group>"; };
+		E2454008231677010015F757 /* INRecordVideoPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INRecordVideoPresenter.h; sourceTree = "<group>"; };
+		E2454009231677010015F757 /* INRecordVideoPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INRecordVideoPresenter.m; sourceTree = "<group>"; };
+		E245400B231677010015F757 /* INRecordVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INRecordVideoModel.m; sourceTree = "<group>"; };
+		E245400C231677010015F757 /* INRecordVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INRecordVideoModel.h; sourceTree = "<group>"; };
+		E245400E231677010015F757 /* INRecordVideoNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INRecordVideoNavigationView.m; sourceTree = "<group>"; };
+		E245400F231677010015F757 /* INRecordVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INRecordVideoView.m; sourceTree = "<group>"; };
+		E2454010231677010015F757 /* INRecordVideoToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INRecordVideoToolView.m; sourceTree = "<group>"; };
+		E2454011231677010015F757 /* INRecordVideoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INRecordVideoProgressView.m; sourceTree = "<group>"; };
+		E2454012231677010015F757 /* INRecordVideoNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INRecordVideoNavigationView.h; sourceTree = "<group>"; };
+		E2454013231677010015F757 /* INRecordVideoToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INRecordVideoToolView.h; sourceTree = "<group>"; };
+		E2454014231677010015F757 /* INRecordVideoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INRecordVideoProgressView.h; sourceTree = "<group>"; };
+		E2454015231677010015F757 /* INRecordVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INRecordVideoView.h; sourceTree = "<group>"; };
+		E2454016231677010015F757 /* INRecordVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INRecordVideoViewController.m; sourceTree = "<group>"; };
+		E2454018231677010015F757 /* INRecordVideoInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INRecordVideoInteractor.m; sourceTree = "<group>"; };
+		E2454019231677010015F757 /* INRecordVideoInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INRecordVideoInteractor.h; sourceTree = "<group>"; };
+		E2454037231677A70015F757 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		E2454038231677A70015F757 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		E245403B231678050015F757 /* SAVideoRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAVideoRangeSlider.m; sourceTree = "<group>"; };
+		E245403C231678050015F757 /* SASliderRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASliderRight.h; sourceTree = "<group>"; };
+		E245403D231678050015F757 /* SASliderLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASliderLeft.m; sourceTree = "<group>"; };
+		E245403E231678050015F757 /* SAResizibleBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAResizibleBubble.m; sourceTree = "<group>"; };
+		E245403F231678050015F757 /* SAVideoRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAVideoRangeSlider.h; sourceTree = "<group>"; };
+		E2454040231678050015F757 /* SASliderRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASliderRight.m; sourceTree = "<group>"; };
+		E2454041231678050015F757 /* SASliderLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASliderLeft.h; sourceTree = "<group>"; };
+		E2454042231678050015F757 /* SAResizibleBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAResizibleBubble.h; sourceTree = "<group>"; };
+		E245404723167A890015F757 /* ic_flash_03_36x36_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_flash_03_36x36_@2x.png"; sourceTree = "<group>"; };
+		E245404823167A890015F757 /* ic_flash_04_36x36_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_flash_04_36x36_@2x.png"; sourceTree = "<group>"; };
+		E245404923167A890015F757 /* ic_flash_01_36x36_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_flash_01_36x36_@2x.png"; sourceTree = "<group>"; };
+		E245404A23167A8A0015F757 /* ic_flash_02_36x36_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_flash_02_36x36_@2x.png"; sourceTree = "<group>"; };
+		E245404F23167A920015F757 /* video_cancel_40x40_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_cancel_40x40_@2x.png"; sourceTree = "<group>"; };
+		E245405023167A930015F757 /* video_cancel_41x40_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_cancel_41x40_@1x.png"; sourceTree = "<group>"; };
+		E245405323167AC90015F757 /* lz_videoedit_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lz_videoedit_slider@2x.png"; sourceTree = "<group>"; };
+		E245405423167ACA0015F757 /* lz_videoedit_dragimage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lz_videoedit_dragimage@3x.png"; sourceTree = "<group>"; };
+		E245405523167ACA0015F757 /* lz_videoedit_dragimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lz_videoedit_dragimage@2x.png"; sourceTree = "<group>"; };
+		E245405623167ACA0015F757 /* lz_videoedit_slider@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lz_videoedit_slider@3x.png"; sourceTree = "<group>"; };
+		E245405B23167AD40015F757 /* ic_nav_white_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_nav_white_close@2x.png"; sourceTree = "<group>"; };
+		E245405D23167B070015F757 /* photograph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2453F95231675BB0015F757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2453FAD231675BE0015F757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2453FB8231675BE0015F757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2453F8F231675BB0015F757 = {
+			isa = PBXGroup;
+			children = (
+				E2453F9A231675BB0015F757 /* CameraUIDemo */,
+				E2453FB3231675BE0015F757 /* CameraUIDemoTests */,
+				E2453FBE231675BE0015F757 /* CameraUIDemoUITests */,
+				E2453F99231675BB0015F757 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2453F99231675BB0015F757 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2453F98231675BB0015F757 /* CameraUIDemo.app */,
+				E2453FB0231675BE0015F757 /* CameraUIDemoTests.xctest */,
+				E2453FBB231675BE0015F757 /* CameraUIDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2453F9A231675BB0015F757 /* CameraUIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E2453F9B231675BB0015F757 /* AppDelegate.h */,
+				E2453F9C231675BB0015F757 /* AppDelegate.m */,
+				E2454038231677A70015F757 /* UIColor+Addition.h */,
+				E2454037231677A70015F757 /* UIColor+Addition.m */,
+				E2453FCD231676E00015F757 /* INMainViewController.h */,
+				E2453FCE231676E00015F757 /* INMainViewController.m */,
+				E2453F9E231675BB0015F757 /* ViewController.h */,
+				E2453F9F231675BB0015F757 /* ViewController.m */,
+				E245404923167A890015F757 /* ic_flash_01_36x36_@2x.png */,
+				E245404A23167A8A0015F757 /* ic_flash_02_36x36_@2x.png */,
+				E245404723167A890015F757 /* ic_flash_03_36x36_@2x.png */,
+				E245404823167A890015F757 /* ic_flash_04_36x36_@2x.png */,
+				E245404F23167A920015F757 /* video_cancel_40x40_@2x.png */,
+				E245405023167A930015F757 /* video_cancel_41x40_@1x.png */,
+				E245405523167ACA0015F757 /* lz_videoedit_dragimage@2x.png */,
+				E245405423167ACA0015F757 /* lz_videoedit_dragimage@3x.png */,
+				E245405323167AC90015F757 /* lz_videoedit_slider@2x.png */,
+				E245405623167ACA0015F757 /* lz_videoedit_slider@3x.png */,
+				E245405B23167AD40015F757 /* ic_nav_white_close@2x.png */,
+				E245405D23167B070015F757 /* photograph@2x.png */,
+				E245403A231678050015F757 /* SAVideoRangeSlider */,
+				E2453FD0231677000015F757 /* CustomCamera */,
+				E2453FA1231675BB0015F757 /* Main.storyboard */,
+				E2453FA4231675BD0015F757 /* Assets.xcassets */,
+				E2453FA6231675BD0015F757 /* LaunchScreen.storyboard */,
+				E2453FA9231675BD0015F757 /* Info.plist */,
+				E2453FAA231675BD0015F757 /* main.m */,
+			);
+			path = CameraUIDemo;
+			sourceTree = "<group>";
+		};
+		E2453FB3231675BE0015F757 /* CameraUIDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FB4231675BE0015F757 /* CameraUIDemoTests.m */,
+				E2453FB6231675BE0015F757 /* Info.plist */,
+			);
+			path = CameraUIDemoTests;
+			sourceTree = "<group>";
+		};
+		E2453FBE231675BE0015F757 /* CameraUIDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FBF231675BE0015F757 /* CameraUIDemoUITests.m */,
+				E2453FC1231675BE0015F757 /* Info.plist */,
+			);
+			path = CameraUIDemoUITests;
+			sourceTree = "<group>";
+		};
+		E2453FD0231677000015F757 /* CustomCamera */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FEB231677010015F757 /* INCameraConfig.h */,
+				E2453FF1231677010015F757 /* INCameraConfig.m */,
+				E2453FD1231677000015F757 /* INDocPathUtils.h */,
+				E2453FEE231677010015F757 /* INDocPathUtils.m */,
+				E2453FD4231677000015F757 /* INRecordVideoConfig.h */,
+				E2453FF0231677010015F757 /* INRecordVideoConfig.m */,
+				E2453FEF231677010015F757 /* INVideoModel.h */,
+				E2453FD5231677000015F757 /* INVideoModel.m */,
+				E2453FED231677010015F757 /* INVideoPlayerConfig.h */,
+				E2453FD2231677000015F757 /* INVideoPlayerConfig.m */,
+				E2453FD3231677000015F757 /* INVideoUtils.h */,
+				E2453FEC231677010015F757 /* INVideoUtils.m */,
+				E2454005231677010015F757 /* RecordVideo */,
+				E2453FF2231677010015F757 /* TakePhoto */,
+				E2453FD6231677000015F757 /* TakeVideo */,
+			);
+			path = CustomCamera;
+			sourceTree = "<group>";
+		};
+		E2453FD6231677000015F757 /* TakeVideo */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FD7231677000015F757 /* INTakeVideoViewController.h */,
+				E2453FD8231677000015F757 /* Presenter */,
+				E2453FDB231677000015F757 /* Model */,
+				E2453FE0231677000015F757 /* View */,
+				E2453FE7231677000015F757 /* INTakeVideoViewController.m */,
+				E2453FE8231677010015F757 /* Interactor */,
+			);
+			path = TakeVideo;
+			sourceTree = "<group>";
+		};
+		E2453FD8231677000015F757 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FD9231677000015F757 /* INTakeVideoPresenter.m */,
+				E2453FDA231677000015F757 /* INTakeVideoPresenter.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E2453FDB231677000015F757 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FDC231677000015F757 /* INTakeVideoModel.h */,
+				E2453FDD231677000015F757 /* INTakeVideoConfig.h */,
+				E2453FDE231677000015F757 /* INTakeVideoModel.m */,
+				E2453FDF231677000015F757 /* INTakeVideoConfig.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2453FE0231677000015F757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FE1231677000015F757 /* INTakeVideoProgressView.m */,
+				E2453FE2231677000015F757 /* INTakeVideoView.m */,
+				E2453FE3231677000015F757 /* INTakeVideoShowView.m */,
+				E2453FE4231677000015F757 /* INTakeVideoProgressView.h */,
+				E2453FE5231677000015F757 /* INTakeVideoView.h */,
+				E2453FE6231677000015F757 /* INTakeVideoShowView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2453FE8231677010015F757 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FE9231677010015F757 /* INTakeVideoInteractor.h */,
+				E2453FEA231677010015F757 /* INTakeVideoInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E2453FF2231677010015F757 /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FF3231677010015F757 /* INTakePhotoViewController.h */,
+				E2453FF4231677010015F757 /* Presenter */,
+				E2453FF7231677010015F757 /* INTakePhotoViewController.m */,
+				E2453FF8231677010015F757 /* Model */,
+				E2453FFD231677010015F757 /* View */,
+				E2454002231677010015F757 /* Interactor */,
+			);
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
+		E2453FF4231677010015F757 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FF5231677010015F757 /* INTakePhotoPresenter.m */,
+				E2453FF6231677010015F757 /* INTakePhotoPresenter.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E2453FF8231677010015F757 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FF9231677010015F757 /* INTakePhotoConfig.h */,
+				E2453FFA231677010015F757 /* INTakePhotoModel.h */,
+				E2453FFB231677010015F757 /* INTakePhotoModel.m */,
+				E2453FFC231677010015F757 /* INTakePhotoConfig.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2453FFD231677010015F757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2453FFE231677010015F757 /* INTakePhotoShowView.m */,
+				E2453FFF231677010015F757 /* INTakePhotoView.h */,
+				E2454000231677010015F757 /* INTakePhotoShowView.h */,
+				E2454001231677010015F757 /* INTakePhotoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2454002231677010015F757 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E2454003231677010015F757 /* INTakePhotoInteractor.h */,
+				E2454004231677010015F757 /* INTakePhotoInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E2454005231677010015F757 /* RecordVideo */ = {
+			isa = PBXGroup;
+			children = (
+				E2454006231677010015F757 /* INRecordVideoViewController.h */,
+				E2454007231677010015F757 /* Presenter */,
+				E245400A231677010015F757 /* Model */,
+				E245400D231677010015F757 /* View */,
+				E2454016231677010015F757 /* INRecordVideoViewController.m */,
+				E2454017231677010015F757 /* Interactor */,
+			);
+			path = RecordVideo;
+			sourceTree = "<group>";
+		};
+		E2454007231677010015F757 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E2454008231677010015F757 /* INRecordVideoPresenter.h */,
+				E2454009231677010015F757 /* INRecordVideoPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E245400A231677010015F757 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E245400B231677010015F757 /* INRecordVideoModel.m */,
+				E245400C231677010015F757 /* INRecordVideoModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E245400D231677010015F757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2454012231677010015F757 /* INRecordVideoNavigationView.h */,
+				E245400E231677010015F757 /* INRecordVideoNavigationView.m */,
+				E2454014231677010015F757 /* INRecordVideoProgressView.h */,
+				E2454011231677010015F757 /* INRecordVideoProgressView.m */,
+				E2454013231677010015F757 /* INRecordVideoToolView.h */,
+				E2454010231677010015F757 /* INRecordVideoToolView.m */,
+				E2454015231677010015F757 /* INRecordVideoView.h */,
+				E245400F231677010015F757 /* INRecordVideoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2454017231677010015F757 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E2454018231677010015F757 /* INRecordVideoInteractor.m */,
+				E2454019231677010015F757 /* INRecordVideoInteractor.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E245403A231678050015F757 /* SAVideoRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				E245403B231678050015F757 /* SAVideoRangeSlider.m */,
+				E245403C231678050015F757 /* SASliderRight.h */,
+				E245403D231678050015F757 /* SASliderLeft.m */,
+				E245403E231678050015F757 /* SAResizibleBubble.m */,
+				E245403F231678050015F757 /* SAVideoRangeSlider.h */,
+				E2454040231678050015F757 /* SASliderRight.m */,
+				E2454041231678050015F757 /* SASliderLeft.h */,
+				E2454042231678050015F757 /* SAResizibleBubble.h */,
+			);
+			path = SAVideoRangeSlider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2453F97231675BB0015F757 /* CameraUIDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2453FC4231675BE0015F757 /* Build configuration list for PBXNativeTarget "CameraUIDemo" */;
+			buildPhases = (
+				E2453F94231675BB0015F757 /* Sources */,
+				E2453F95231675BB0015F757 /* Frameworks */,
+				E2453F96231675BB0015F757 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraUIDemo;
+			productName = CameraUIDemo;
+			productReference = E2453F98231675BB0015F757 /* CameraUIDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2453FAF231675BE0015F757 /* CameraUIDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2453FC7231675BE0015F757 /* Build configuration list for PBXNativeTarget "CameraUIDemoTests" */;
+			buildPhases = (
+				E2453FAC231675BE0015F757 /* Sources */,
+				E2453FAD231675BE0015F757 /* Frameworks */,
+				E2453FAE231675BE0015F757 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2453FB2231675BE0015F757 /* PBXTargetDependency */,
+			);
+			name = CameraUIDemoTests;
+			productName = CameraUIDemoTests;
+			productReference = E2453FB0231675BE0015F757 /* CameraUIDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2453FBA231675BE0015F757 /* CameraUIDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2453FCA231675BE0015F757 /* Build configuration list for PBXNativeTarget "CameraUIDemoUITests" */;
+			buildPhases = (
+				E2453FB7231675BE0015F757 /* Sources */,
+				E2453FB8231675BE0015F757 /* Frameworks */,
+				E2453FB9231675BE0015F757 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2453FBD231675BE0015F757 /* PBXTargetDependency */,
+			);
+			name = CameraUIDemoUITests;
+			productName = CameraUIDemoUITests;
+			productReference = E2453FBB231675BE0015F757 /* CameraUIDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2453F90231675BB0015F757 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.boliboli;
+				TargetAttributes = {
+					E2453F97231675BB0015F757 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E2453FAF231675BE0015F757 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E2453F97231675BB0015F757;
+					};
+					E2453FBA231675BE0015F757 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E2453F97231675BB0015F757;
+					};
+				};
+			};
+			buildConfigurationList = E2453F93231675BB0015F757 /* Build configuration list for PBXProject "CameraUIDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2453F8F231675BB0015F757;
+			productRefGroup = E2453F99231675BB0015F757 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2453F97231675BB0015F757 /* CameraUIDemo */,
+				E2453FAF231675BE0015F757 /* CameraUIDemoTests */,
+				E2453FBA231675BE0015F757 /* CameraUIDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2453F96231675BB0015F757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E245405223167A930015F757 /* video_cancel_41x40_@1x.png in Resources */,
+				E245405C23167AD40015F757 /* ic_nav_white_close@2x.png in Resources */,
+				E2453FA8231675BD0015F757 /* LaunchScreen.storyboard in Resources */,
+				E245405123167A930015F757 /* video_cancel_40x40_@2x.png in Resources */,
+				E245405723167ACA0015F757 /* lz_videoedit_slider@2x.png in Resources */,
+				E245405A23167ACA0015F757 /* lz_videoedit_slider@3x.png in Resources */,
+				E245405923167ACA0015F757 /* lz_videoedit_dragimage@2x.png in Resources */,
+				E245405E23167B070015F757 /* photograph@2x.png in Resources */,
+				E245404B23167A8A0015F757 /* ic_flash_03_36x36_@2x.png in Resources */,
+				E2453FA5231675BD0015F757 /* Assets.xcassets in Resources */,
+				E2453FA3231675BB0015F757 /* Main.storyboard in Resources */,
+				E245404C23167A8A0015F757 /* ic_flash_04_36x36_@2x.png in Resources */,
+				E245405823167ACA0015F757 /* lz_videoedit_dragimage@3x.png in Resources */,
+				E245404D23167A8A0015F757 /* ic_flash_01_36x36_@2x.png in Resources */,
+				E245404E23167A8A0015F757 /* ic_flash_02_36x36_@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2453FAE231675BE0015F757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2453FB9231675BE0015F757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2453F94231675BB0015F757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E245401B231677010015F757 /* INVideoModel.m in Sources */,
+				E2454027231677010015F757 /* INCameraConfig.m in Sources */,
+				E245401D231677010015F757 /* INTakeVideoModel.m in Sources */,
+				E2453FCF231676E00015F757 /* INMainViewController.m in Sources */,
+				E2454035231677010015F757 /* INRecordVideoViewController.m in Sources */,
+				E245402B231677010015F757 /* INTakePhotoConfig.m in Sources */,
+				E2454030231677010015F757 /* INRecordVideoModel.m in Sources */,
+				E2454021231677010015F757 /* INTakeVideoShowView.m in Sources */,
+				E2454045231678060015F757 /* SAResizibleBubble.m in Sources */,
+				E2454043231678060015F757 /* SAVideoRangeSlider.m in Sources */,
+				E245402E231677010015F757 /* INTakePhotoInteractor.m in Sources */,
+				E2454032231677010015F757 /* INRecordVideoView.m in Sources */,
+				E2454044231678060015F757 /* SASliderLeft.m in Sources */,
+				E245401A231677010015F757 /* INVideoPlayerConfig.m in Sources */,
+				E2454026231677010015F757 /* INRecordVideoConfig.m in Sources */,
+				E245401E231677010015F757 /* INTakeVideoConfig.m in Sources */,
+				E2454025231677010015F757 /* INDocPathUtils.m in Sources */,
+				E2454024231677010015F757 /* INVideoUtils.m in Sources */,
+				E2454023231677010015F757 /* INTakeVideoInteractor.m in Sources */,
+				E2453FA0231675BB0015F757 /* ViewController.m in Sources */,
+				E2454020231677010015F757 /* INTakeVideoView.m in Sources */,
+				E2454022231677010015F757 /* INTakeVideoViewController.m in Sources */,
+				E2453FAB231675BD0015F757 /* main.m in Sources */,
+				E245401F231677010015F757 /* INTakeVideoProgressView.m in Sources */,
+				E2453F9D231675BB0015F757 /* AppDelegate.m in Sources */,
+				E2454031231677010015F757 /* INRecordVideoNavigationView.m in Sources */,
+				E2454028231677010015F757 /* INTakePhotoPresenter.m in Sources */,
+				E245402A231677010015F757 /* INTakePhotoModel.m in Sources */,
+				E245401C231677010015F757 /* INTakeVideoPresenter.m in Sources */,
+				E2454046231678060015F757 /* SASliderRight.m in Sources */,
+				E245402F231677010015F757 /* INRecordVideoPresenter.m in Sources */,
+				E2454036231677010015F757 /* INRecordVideoInteractor.m in Sources */,
+				E2454034231677010015F757 /* INRecordVideoProgressView.m in Sources */,
+				E245402D231677010015F757 /* INTakePhotoView.m in Sources */,
+				E2454029231677010015F757 /* INTakePhotoViewController.m in Sources */,
+				E2454039231677A70015F757 /* UIColor+Addition.m in Sources */,
+				E2454033231677010015F757 /* INRecordVideoToolView.m in Sources */,
+				E245402C231677010015F757 /* INTakePhotoShowView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2453FAC231675BE0015F757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2453FB5231675BE0015F757 /* CameraUIDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2453FB7231675BE0015F757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2453FC0231675BE0015F757 /* CameraUIDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2453FB2231675BE0015F757 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2453F97231675BB0015F757 /* CameraUIDemo */;
+			targetProxy = E2453FB1231675BE0015F757 /* PBXContainerItemProxy */;
+		};
+		E2453FBD231675BE0015F757 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2453F97231675BB0015F757 /* CameraUIDemo */;
+			targetProxy = E2453FBC231675BE0015F757 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2453FA1231675BB0015F757 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2453FA2231675BB0015F757 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2453FA6231675BD0015F757 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2453FA7231675BD0015F757 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2453FC2231675BE0015F757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E2453FC3231675BE0015F757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2453FC5231675BE0015F757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CameraUIDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boliboli.CameraUIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2453FC6231675BE0015F757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CameraUIDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boliboli.CameraUIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2453FC8231675BE0015F757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CameraUIDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boliboli.CameraUIDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CameraUIDemo.app/CameraUIDemo";
+			};
+			name = Debug;
+		};
+		E2453FC9231675BE0015F757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CameraUIDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boliboli.CameraUIDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CameraUIDemo.app/CameraUIDemo";
+			};
+			name = Release;
+		};
+		E2453FCB231675BE0015F757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CameraUIDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boliboli.CameraUIDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CameraUIDemo;
+			};
+			name = Debug;
+		};
+		E2453FCC231675BE0015F757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CameraUIDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boliboli.CameraUIDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CameraUIDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2453F93231675BB0015F757 /* Build configuration list for PBXProject "CameraUIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2453FC2231675BE0015F757 /* Debug */,
+				E2453FC3231675BE0015F757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2453FC4231675BE0015F757 /* Build configuration list for PBXNativeTarget "CameraUIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2453FC5231675BE0015F757 /* Debug */,
+				E2453FC6231675BE0015F757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2453FC7231675BE0015F757 /* Build configuration list for PBXNativeTarget "CameraUIDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2453FC8231675BE0015F757 /* Debug */,
+				E2453FC9231675BE0015F757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2453FCA231675BE0015F757 /* Build configuration list for PBXNativeTarget "CameraUIDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2453FCB231675BE0015F757 /* Debug */,
+				E2453FCC231675BE0015F757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2453F90231675BB0015F757 /* Project object */;
+}
